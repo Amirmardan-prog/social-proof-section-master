@@ -4,7 +4,6 @@ body {
 
 /* ============= skeleton of working area and images  ==================*/
 .work_area {
-  outline: 3px solid red;
   min-height: 100vh;
   margin-bottom: 10px;
   display: flex;
@@ -32,7 +31,6 @@ body {
 }
 
 .container {
-  outline: 3px solid red;
   background-color: white;
   margin: auto 10rem;
   padding: 4rem;
@@ -156,9 +154,8 @@ For medium, tablet and phone size scrren
   }
 
   .container {
-    outline: 2px solid red;
-    margin: auto 5rem;
-    padding: 5rem;
+    margin: auto 0rem;
+    padding: 1rem;
   }
 
   .top {
@@ -178,7 +175,8 @@ For medium, tablet and phone size scrren
   }
 
   .img_bottom {
-    top: 120%;
+    display: block;
+    top: 70%;
     background: url("/images/bg-pattern-bottom-mobile.svg") no-repeat;
   }
 }
@@ -186,6 +184,6 @@ For medium, tablet and phone size scrren
 
 @media (max-width:680px) {
   .img_bottom {
-    top: 140%;
+    top: 120%;
   }
 }
