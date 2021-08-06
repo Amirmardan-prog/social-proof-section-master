@@ -1,5 +1,6 @@
 body {
   font-family: Spartan;
+  font-size: 0.90rem;
 }
 
 /* ============= skeleton of working area and images  ==================*/
@@ -52,6 +53,9 @@ p {
   width: 55%;
   border-radius: 10px;
   margin-left: 15%;
+  color:hsl(300, 43%, 22%);
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 .BestTech {
