@@ -1,0 +1,191 @@
+body {
+  font-family: Spartan;
+}
+
+/* ============= skeleton of working area and images  ==================*/
+.work_area {
+  outline: 3px solid red;
+  min-height: 100vh;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 50%;
+  width: 50%;
+  background: url("/images/bg-pattern-bottom-desktop.svg") no-repeat;
+}
+
+
+.img_top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  width: 50%;
+  background: url("/images/bg-pattern-top-desktop.svg") no-repeat;
+}
+
+.container {
+  outline: 3px solid red;
+  background-color: white;
+  margin: auto 10rem;
+  padding: 4rem;
+}
+
+/* ============= Top part  ==================*/
+h1 {
+  color: hsl(300, 43%, 22%)
+}
+
+p {
+  color: hsl(303, 10%, 53%);
+}
+
+.network {
+  margin: 1rem;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1rem;
+  width: 55%;
+  border-radius: 10px;
+  margin-left: 15%;
+}
+
+.BestTech {
+  margin-left: 38%;
+}
+
+.Report {
+  margin-left: 26%;
+}
+
+.stars {
+  color: gold;
+  display: inline;
+}
+
+.top {
+  margin-bottom: 4rem;
+  display: flex;
+}
+
+.top_left {
+  width: 50%;
+}
+
+.top_right {
+  width: 50%;
+}
+
+/* ============= bottom part  ==================*/
+
+img {
+  border-radius: 100%;
+  margin: 0 2rem 2rem 0;
+}
+
+.client_info {
+  display: flex;
+}
+.comments {
+  color: white;
+  display: flex;
+}
+
+.name {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+.one_comment {
+  padding: 2rem;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.one_comment+.one_comment {
+  padding: 2rem;
+  margin-left: 3rem;
+  background-color: hsl(300, 43%, 22%);
+  border-radius: 10px;
+}
+
+.verified {
+  color: hsl(333, 80%, 67%);
+}
+
+/*
+============================
+
+For medium, tablet and phone size scrren
+=============================
+*/
+@media (max-width:1000px) {
+  .container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width:900px) {
+  .network {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .top_left {
+    width: 100%;
+  }
+
+  .top_right {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .network {
+    background-color: hsl(300, 24%, 96%);
+    padding: 1rem;
+    width: 100%;
+    width: 90%;
+    border-radius: 10px;
+  }
+
+  .container {
+    outline: 2px solid red;
+    margin: auto 5rem;
+    padding: 5rem;
+  }
+
+  .top {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .comments {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .one_comment+.one_comment {
+    margin-left: 0;
+
+  }
+
+  .img_bottom {
+    top: 120%;
+    background: url("/images/bg-pattern-bottom-mobile.svg") no-repeat;
+  }
+}
+
+
+@media (max-width:680px) {
+  .img_bottom {
+    top: 140%;
+  }
+}
